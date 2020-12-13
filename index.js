@@ -71,8 +71,9 @@ async function test()
       )
     }
 
-    console.log(`Response: ${response.data}`);
-
+    console.log(`Response:`);
+    console.log(response.data);
+    console.log(JSON.stringify(response.data, undefined, 2))
 
   } catch (error) {
     core.setFailed(error.message);
