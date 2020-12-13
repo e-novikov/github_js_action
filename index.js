@@ -12,7 +12,7 @@ try {
   const payload = JSON.stringify(github.context.payload, undefined, 2)
   console.log(`The event payload: ${payload}`);
 
-  const client = new GitHub(core.getInput('token',{required = true}));
+  const client = new GitHub(core.getInput('token'));
 
   const eventName = context.eventName;
 
